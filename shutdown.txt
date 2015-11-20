@@ -1,0 +1,51 @@
+Shutdown v1.3 for OS/2 2.x
+--------------------------
+
+Shutdown is a utility to schedule a system shutdown. This can be done in several
+ways. The exact commandline is as follows:
+
+SHUTDOWN.EXE [[/axxxx] | [[/dyyyymmdd] [/thhmm]]]
+
+where:
+             /a - shutdown after xxxx seconds
+             /d - shutdown on YYYYMMDD (Year, Month, Day)
+             /t - shutdown on HHMM (24 hour format)
+             /? - show a help screen
+             SHUTDOWN without options will shutdown the system immediately
+
+You cannot use the /a option in combination with /d and/or /t. Command line
+parsing is case sensitive so you should use /a instead of /A.
+
+
+Examples:
+---------
+
+SHUTDOWN /A60
+this will shutdown the system in one minute
+
+SHUTDOWN /D931231 /T2359
+this will shutdown the system one minute before new year
+
+SHUTDOWN /T0500
+this will shutdown the system at five in the morning
+
+SHUTDOWN /D940101
+this will shutdown the system on January 1 1994 at midnight
+
+Program information:
+--------------------
+Name       : Shutdown for OS/2
+Version    : 1.3
+Compiler   : Borland C++ v1.0 for OS/2
+
+Created on : 29 March 1993
+             Santiago Crespo, 2:341/24@fidonet.org
+             Just did a shutdown
+
+Modified   : 29 December 1993
+             Steven van.Loef, 2:512/45.16@fidonet.org
+             added option to shutdown after specified seconds
+             added option to shutdown on specified date and/or time
+
+This software was freeware and still is freeware, source is included.
+
